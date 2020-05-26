@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="testDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CPage2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Over.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PictureEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="testDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CPage2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Over.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="test.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\test.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\gif1.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\gif3.bin">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\test.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="F:\360MoveData\Users\84166\Desktop\5.dib" />
+    <Image Include="..\图标\START.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\图标\startb.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\图标\starte.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\图标\startf.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\图标\aboutf.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\图标\aboute.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\图标\bg.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\图标\MUsic.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\图标\bitmap6.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\Game\GameButton.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\Game\GameButton_E.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\Game\Over.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\Game\OverE.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\felix_new.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\图标\writer.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\图标\writerE.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\music\BGMUSIC.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="..\music\water.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
