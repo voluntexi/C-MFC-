@@ -59,6 +59,6 @@ void AboutTest::OnPaint()
 					   // TODO: 在此处添加消息处理程序代码
 					   // 不为绘图消息调用 CDialogEx::OnPaint()
 	CImage img_bg;
-	img_bg.Load(_T("C:\\Users\\84166\\source\\repos\\test\\GIF\\Writer.jpg"));
+	img_bg.Load(_T("..\\GIF\\Writer.jpg"));
 	img_bg.Draw(GetDC()->m_hDC, CRect(0,70,380 ,185 ));
 }

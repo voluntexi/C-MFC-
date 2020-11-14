@@ -56,4 +56,5 @@ public:
 	void CloseMusic();
 	void OnBnClickedButton4();
 	afx_msg void OnBnClickedButton5();
+
 };

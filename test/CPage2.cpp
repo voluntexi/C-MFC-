@@ -42,6 +42,6 @@ void CPage2::OnPaint()
 					   // 不为绘图消息调用 
 
 	CImage img1;
-	img1.Load(_T("C:\\Users\\84166\\source\\repos\\test\\test\\ABOUTbg.jpg"));
-	img1.Draw(GetDC()->m_hDC, CRect(0, 0, 680, 470));
+	img1.Load(_T(".\\ABOUTbg.jpg"));
+	img1.Draw(GetDC()->m_hDC, CRect(-30, 0, 650, 500));
 }

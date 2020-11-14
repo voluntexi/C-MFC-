@@ -48,7 +48,7 @@ void GAME::OnPaint()
 					   // TODO: 在此处添加消息处理程序代码
 					   // 不为绘图消息调用 CDialogEx::OnPaint()
 	CImage img_bg;
-	img_bg.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\GameBg.jpg"));
+	img_bg.Load(_T("..\\Game\\GameBg.jpg"));
 	img_bg.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 450));
 }
 BOOL GAME::OnInitDialog()
@@ -99,7 +99,7 @@ void GAME::OnBnClickedButton4()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	//PlaySound(MAKEINTRESOURCE(IDR_WAVE2), AfxGetResourceHandle(), SND_SYNC | SND_RESOURCE | SND_NODEFAULT); 播放音乐
-	mciSendString(_T("open C:\\Users\\84166\\source\\repos\\test\\music\\water.wav alias aa"), NULL, 0, NULL);
+	mciSendString(_T("open ..\\music\\water.wav alias aa"), NULL, 0, NULL);
 	mciSendString(_T("play aa wait"), NULL, 0, NULL);
 	mciSendString(_T("close aa"), NULL, 0, m_hWnd);
 	//===============================================================================================================
@@ -120,12 +120,12 @@ void GAME::OnBnClickedButton4()
 		file.Write(crlf, sizeof(crlf));
 		Invalidate();
 		CImage img_bg1;
-		img_bg1.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\bg8to5.jpg"));
+		img_bg1.Load(_T("..\\Game\\bg8to5.jpg"));
 		img_bg1.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 460));
 		
 		Sleep(500);
 		CImage img_bg2;
-		img_bg2.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\GameBg.jpg"));
+		img_bg2.Load(_T("..\\Game\\GameBg.jpg"));
 		img_bg2.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 450));
 	}
 	if (str == "6L")
@@ -139,12 +139,12 @@ void GAME::OnBnClickedButton4()
 		file.Write(crlf, sizeof(crlf));
 		Invalidate();
 		CImage img_bg1;
-		img_bg1.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\bg8to5.jpg"));
+		img_bg1.Load(_T("..\\Game\\bg8to5.jpg"));
 		img_bg1.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 460));
 
 		Sleep(500);
 		CImage img_bg2;
-		img_bg2.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\GameBg.jpg"));
+		img_bg2.Load(_T("..\\Game\\GameBg.jpg"));
 		img_bg2.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 450));
 	}
 	//逻辑判断------------------------------------------------------
@@ -155,7 +155,7 @@ void GAME::OnBnClickedButton2()
 {
 	// TODO: 在此添加控件通知处理程序代码
 
-	mciSendString(_T("open C:\\Users\\84166\\source\\repos\\test\\music\\water.wav alias aa"), NULL, 0, NULL);
+	mciSendString(_T("open ..\\music\\water.wav alias aa"), NULL, 0, NULL);
 	mciSendString(_T("play aa wait"), NULL, 0, NULL);
 	mciSendString(_T("close aa"), NULL, 0, m_hWnd);
 	//===============================================================================================================
@@ -176,12 +176,12 @@ void GAME::OnBnClickedButton2()
 		file.Write(crlf, sizeof(crlf));
 		Invalidate();
 		CImage img_bg1;
-		img_bg1.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\bg5to3.jpg"));
+		img_bg1.Load(_T("..\\Game\\bg5to3.jpg"));
 		img_bg1.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 460));
 
 		Sleep(500);
 		CImage img_bg2;
-		img_bg2.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\GameBg.jpg"));
+		img_bg2.Load(_T("..\\Game\\GameBg.jpg"));
 		img_bg2.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 450));
 	}
 
@@ -196,12 +196,12 @@ void GAME::OnBnClickedButton2()
 		file.Write(crlf, sizeof(crlf));
 		Invalidate();
 		CImage img_bg1;
-		img_bg1.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\bg5to3.jpg"));
+		img_bg1.Load(_T("..\\Game\\bg5to3.jpg"));
 		img_bg1.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 460));
 
 		Sleep(500);
 		CImage img_bg2;
-		img_bg2.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\GameBg.jpg"));
+		img_bg2.Load(_T("..\\Game\\GameBg.jpg"));
 		img_bg2.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 450));
 
 	}
@@ -209,8 +209,6 @@ void GAME::OnBnClickedButton2()
 	{
 		GetDlgItem(IDC_BUTTON5)->SetWindowTextW(_T("3L"));
 		GetDlgItem(IDC_BUTTON6)->SetWindowTextW(_T("4L"));
-		/*CFile file;
-		file.Open(L"C:\\Users\\84166\\source\\repos\\the water bottle algorithm\\步骤.txt", CFile::modeWrite, NULL);*/
 		char crlf[] = "\r\n";
 		file.Write("----5L水壶全满，8L水壶1L水，将5L水壶水倒入 3L水壶中------3L水壶剩余：全满，5L水壶4L水", strlen("----5L水壶全满，8L水壶1L水，将5L水壶水倒入 3L水壶中------3L水壶剩余：全满，5L水壶4L水"));
 		file.Write(crlf, sizeof(crlf));
@@ -218,12 +216,12 @@ void GAME::OnBnClickedButton2()
 		file.Close();
 		Invalidate();
 		CImage img_bg1;
-		img_bg1.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\bg5to3.jpg"));
+		img_bg1.Load(_T("..\\Game\\bg5to3.jpg"));
 		img_bg1.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 460));
 
 		Sleep(500);
 		CImage img_bg2;
-		img_bg2.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\GameBg.jpg"));
+		img_bg2.Load(_T("..\\Game\\GameBg.jpg"));
 		img_bg2.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 450));
 		Sleep(800);
 		TimerOn = false;
@@ -238,7 +236,7 @@ void GAME::OnBnClickedButton1()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	//PlaySound(MAKEINTRESOURCE(IDR_WAVE2), AfxGetResourceHandle(), SND_SYNC | SND_RESOURCE | SND_NODEFAULT); 播放音乐
-	mciSendString(_T("open C:\\Users\\84166\\source\\repos\\test\\music\\water.wav alias aa"), NULL, 0, NULL);
+	mciSendString(_T("open ..\\music\\water.wav alias aa"), NULL, 0, NULL);
 	mciSendString(_T("play aa wait"), NULL, 0, NULL);
 	mciSendString(_T("close aa"), NULL, 0, m_hWnd);
 	//===============================================================================================================
@@ -256,12 +254,12 @@ void GAME::OnBnClickedButton1()
 		file.Write(crlf, sizeof(crlf));
 		Invalidate();
 		CImage img_bg1;
-		img_bg1.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\bg3to8.jpg"));
+		img_bg1.Load(_T("..\\Game\\bg3to8.jpg"));
 		img_bg1.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 460));
 
 		Sleep(500);
 		CImage img_bg2;
-		img_bg2.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\GameBg.jpg"));
+		img_bg2.Load(_T("..\\Game\\GameBg.jpg"));
 		img_bg2.Draw(GetDC()->m_hDC, CRect(-5, 0, 647, 450));
 	}
 }

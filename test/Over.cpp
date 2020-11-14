@@ -41,8 +41,10 @@ void Over::OnPaint()
 					   // TODO: 在此处添加消息处理程序代码
 					   // 不为绘图消息调用 CDialogEx::OnPaint()
 	CImage img_bg;
-	img_bg.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\Over.jpg"));
-	img_bg.Draw(GetDC()->m_hDC, CRect(0, -30, 450, 320));
+	if (img_bg.IsNull()) {
+		img_bg.Load(_T("C:\\Users\\84166\\source\\repos\\test\\Game\\Over.jpg"));
+		img_bg.Draw(GetDC()->m_hDC, CRect(0, -30, 450, 320));
+	}
 
 
 }

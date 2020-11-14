@@ -180,13 +180,13 @@ void CtestDlg::OnPaint()
 		dc.DrawIcon(x, y, m_hIcon);
 	}
 	else
-	{    Image img(L"Toptest.png");
-	     Image img2(L"bg.jpg");
-	     graph->DrawImage(&img2, PointF(0, 0));
-		graph->DrawImage(&img, PointF(20, 40));
+	{   
 		CDialogEx::OnPaint();
 	}
-		
+		 Image img(L"Toptest.png");
+	      Image img2(L"bg.jpg");
+	     graph->DrawImage(&img2, PointF(0, 0));
+		graph->DrawImage(&img, PointF(20, 40));
 		
 		
 }
